@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
-import "../styles/numerology.css";
 import CalculationsPage from "./CalculationsPage";
 import Numerology from "numerology-core";
 
