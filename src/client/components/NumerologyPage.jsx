@@ -29,7 +29,7 @@ class NumerologyPage extends Component {
   }
 
   getName() {
-    return this.state.firstName + " " + this.state.lastName;
+    return `${this.state.firstName} ${this.state.lastName}`;
   }
 
   getDateOfBirth() {
@@ -89,12 +89,14 @@ class NumerologyPage extends Component {
               </div>
               <div className="input-group col-lg-8">
                 <label htmlFor="last-name">Last Name</label>
-                <input type="text" className="form-control" id="last-name" placeholder="last name given during birth"
+                <input type="text" className="form-control"
+                  id="last-name" placeholder="last name given during birth"
                   value={this.state.lastName} onChange={this.handleLastNameChange} />
               </div>
               <div className="input-group col-lg-8">
                 <label htmlFor="date-of-birth">Date of Birth</label>
-                <input type="text" className="form-control" id="date-of-name" placeholder="mm-dd-yyyy"
+                <input type="text" className="form-control"
+                  id="date-of-name" placeholder="mm-dd-yyyy"
                   value={this.state.dateOfBirth} onChange={this.handleDateOfBirthChange} />
               </div>
               <div className="btn-group">
@@ -106,9 +108,9 @@ class NumerologyPage extends Component {
           </div>
         </div>
 
-        <CalculationsPage isVisible={this.getIsVisible()} name={this.getName()} 
+        <CalculationsPage isVisible={this.getIsVisible()} name={this.getName()}
           destinyNumber={this.getDestinyNumber()}
-          birthForceNumber={this.getBirthForceNumber()} 
+          birthForceNumber={this.getBirthForceNumber()}
           heartsDesireNumber={this.getHeartsDesireNumber()}
           personalityNumber={this.getPersonalityNumber()}
           realityNumber={this.getRealityNumber()} />
