@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import '../styles/numerology.css';
-import CalculationsPage from './CalculationsPage';
-import Numerology from 'numerology-core';
+import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import "../styles/numerology.css";
+import CalculationsPage from "./CalculationsPage";
+import Numerology from "numerology-core";
 
 class NumerologyPage extends Component {
   constructor(props) {
@@ -11,9 +11,9 @@ class NumerologyPage extends Component {
     this.numerology = new Numerology();
 
     this.state = {
-      firstName: '',
-      lastName: '',
-      dateOfBirth: '',
+      firstName: "",
+      lastName: "",
+      dateOfBirth: "",
       isVisible: false
     };
 
@@ -29,7 +29,7 @@ class NumerologyPage extends Component {
   }
 
   getName() {
-    return this.state.firstName + ' ' + this.state.lastName;
+    return this.state.firstName + " " + this.state.lastName;
   }
 
   getDateOfBirth() {
